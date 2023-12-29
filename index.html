@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 2rem;
+        }
+
+        .container {
+            color: white;
+            border: 5px solid gold;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container>* {
+            width: 200px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .indigo {
+            background-color: indigo;
+        }
+
+        .violet {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="place-content: stretch space-between; flex-wrap: nowrap; align-items: flex-start;">
+        <div class="red">Red</div>
+        <div class="orange">Orange</div>
+        <div class="yellow">Yellow</div>
+        <div class="green">Green</div>
+        <div class="blue">Blue</div>
+        <div class="indigo">Indigo</div>
+        <div class="purple">Purple</div>
+     </div>
+    <div style="display:flex; gap:2rem;justify-content: space-between;">
+        <div>
+            <label for="justify-content">justify content:</label>
+            <select name="" id="justify-content">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space evenly">space Evenly</option>
+            </select>
+        </div>
+        <div>
+            <label for="flex wrap">Flex wrap</label>
+            <select name="" id="flex wrap">
+                <option value="Nowrap">No wrap</option>
+                <option value="Wrap">Wrap</option>
+                <option value="wrap reverse">Wrap Reverse</option>
+            </select>
+        </div>
+        <div>
+            <label for="Align Items">Align Items:</label>
+            <select name="" id="Align Items">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex end</option>
+                <option value="center">center</option>
+                <option value="baseline">Baseline</option>
+                <option value="stretch">Stretch</option>
+            </select>
+        </div>
+        <div>
+            <label for="Align Content">Align Content:</label>
+            <select name="" id="Align Content">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space evenly">space Evenly</option>
+                <option value="stretch">Stretch</option>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>
